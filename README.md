@@ -33,4 +33,4 @@ It should be pretty straight forward to use by following these steps.
 1. Clone the github repo to your local machine
 2. run npm i or yarn to install the required dependencies
 3. run npm run build to complile the typescript code
-4. run npm run exec <filepath> to flatten the json in the specified file, it will be saved in the output folder.
+4. run npm run exec "filepath" to flatten the json in the specified file, it will be saved in the output folder.
