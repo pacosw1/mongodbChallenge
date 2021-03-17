@@ -1,6 +1,6 @@
 # mongodbChallenge
 
-This project took about two hours to completed
+This project took about two hours to complete
 
 #Time
 
