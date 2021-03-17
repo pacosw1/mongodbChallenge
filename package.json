@@ -1,0 +1,22 @@
+{
+  "name": "mongochallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "typescript": "3.4.3",
+    "@types/node": "12.12.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "tsc -w",
+    "exec": "node ./dist/lib/index.js",
+    "build": "tsc"
+  },
+  "author": "pacosw",
+  "license": "ISC",
+  "private": false
+}

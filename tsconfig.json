@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "ES2018",
+        "module": "commonjs",
+        "lib": ["ES2016", "ES2017.Object", "ES2017.string", "DOM"],
+        "declaration": true,
+        "outDir": "./dist/lib",
+        "declarationDir": "./dist/types",
+        "strict": true,
+        "noImplicitAny": false,
+        "alwaysStrict": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": false,
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false,
+        "typeRoots": ["./node_modules/@types"]
+    },
+    "rules": {
+        "no-console-log": false
+    },
+    "exclude": ["node_modules", "build", "dist", "output"]
+}
