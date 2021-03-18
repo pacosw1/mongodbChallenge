@@ -18,7 +18,7 @@ I really like enjoy graph and tree problems, so I was quick to identify that thi
 
 It was a little confusing handling the items as I was not used to using key value objects as "nodes" in a tree.
 
-The solution basically consists of taking a json object, and going depth first through each of the root kets in the object. Each key is modeled as a tree with children.
+The solution basically consists of taking a json object, and going depth first through each of the root keys in the object. Each key is modeled as a tree with children.
 
 Additionally it was required to keep track of the path that each "tree takes" in order to keep the flattened keys when the max depth of the field has been reached.
 
