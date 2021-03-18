@@ -28,7 +28,7 @@ export class JSONFlattener {
         if (this.error)
             return
 
-        const rootKeys = Object.keys(this.jsonObject)
+        const rootKeys: string[] = Object.keys(this.jsonObject)
         //go through each root key like a n-tree depth first
         rootKeys.forEach(rootKey => {
             this.flattenKeyField(this.jsonObject, rootKey, rootKey)
@@ -39,7 +39,7 @@ export class JSONFlattener {
         if (!hasChildren(obj, key))
             return this.output[path] = obj[key]
 
-        const children = getChildren(obj, key)
+        const children: string[] = getChildren(obj, key)
         if (children.length === 0) return this.output[path] = obj[key]
 
         children.forEach(childKey => {

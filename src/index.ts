@@ -3,7 +3,7 @@ import { JSONFlattener } from "./JSONFlattener"
 import { exit } from "process"
 import { AssertEqual } from "./utils"
 
-const args = process.argv
+const args: string[] = process.argv
 //input file validation
 if (args.length < 3) {
     console.log("specify an input file")
@@ -11,8 +11,8 @@ if (args.length < 3) {
 }
 
 //attempt to read input file
-let json
-const inputPath = args[2]
+let json: string
+const inputPath: string = args[2]
 try {
     json = fs.readFileSync(inputPath, 'utf-8')
 } catch (err) {
@@ -30,7 +30,5 @@ flattener.printOutput()
 flattener.generateJSONFile()
 
 //run test to verify originial and flattened json is equivalent
-const correct = AssertEqual(flattener.jsonObject, flattener.output)
+const correct: boolean = AssertEqual(flattener.jsonObject, flattener.output)
 console.log(correct ? "test passed" : "test failed")
-
-
